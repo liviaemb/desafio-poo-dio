@@ -8,6 +8,8 @@ import java.util.Set;
 
 public class Bootcamp {
     private String nome;
+    private String email;
+    private String phone;
     private String descricao;
     private final LocalDate dataInicial = LocalDate.now();
     private final LocalDate dataFinal = dataInicial.plusDays(45);
@@ -22,6 +24,18 @@ public class Bootcamp {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) { this.email = this.email; }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) { this.phone = phone; }
 
     public String getDescricao() {
         return descricao;

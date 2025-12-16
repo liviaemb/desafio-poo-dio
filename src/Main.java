@@ -1,11 +1,18 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 import br.com.dio.desafio.dominio.Bootcamp;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
-
 import java.time.LocalDate;
 
 public class Main {
+    public Main() {
+    }
+
     public static void main(String[] args) {
         Curso curso1 = new Curso();
         curso1.setTitulo("curso java");
@@ -22,10 +29,6 @@ public class Main {
         mentoria.setDescricao("descrição mentoria java");
         mentoria.setData(LocalDate.now());
 
-        /*System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria);*/
-
         Bootcamp bootcamp = new Bootcamp();
         bootcamp.setNome("Bootcamp Java Developer");
         bootcamp.setDescricao("Descrição Bootcamp Java Developer");
@@ -35,6 +38,8 @@ public class Main {
 
         Dev devCamila = new Dev();
         devCamila.setNome("Camila");
+        devCamila.setEmail("camila@email.com");
+        devCamila.setPhone("11999999999");
         devCamila.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
         devCamila.progredir();
@@ -43,11 +48,15 @@ public class Main {
         System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
         System.out.println("XP:" + devCamila.calcularTotalXp());
+        System.out.println("Email Camila: " + devCamila.getEmail());
+        System.out.println("Telefone Camila: " + devCamila.getPhone());
 
         System.out.println("-------");
 
         Dev devJoao = new Dev();
         devJoao.setNome("Joao");
+        devJoao.setEmail("joao@email.com");
+        devJoao.setPhone("11888888888");
         devJoao.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
         devJoao.progredir();
@@ -57,7 +66,7 @@ public class Main {
         System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
         System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
         System.out.println("XP:" + devJoao.calcularTotalXp());
-
+        System.out.println("Email João: " + devJoao.getEmail());
+        System.out.println("Telefone João: " + devJoao.getPhone());
     }
-
 }

@@ -4,6 +4,8 @@ import java.util.*;
 
 public class Dev {
     private String nome;
+    private String email;
+    private String phone;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
@@ -37,13 +39,28 @@ public class Dev {
                 .sum();*/
     }
 
-
     public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public Set<Conteudo> getConteudosInscritos() {
